@@ -1,0 +1,90 @@
+
+<html>
+<head> 
+<link rel="stylesheet" href="actualcal.css">
+ </head>
+ <body>
+<div class="container-fluid">
+  <div class="container" id = "cal">
+    <div class="row" id="tittle">
+      <h3>CALCULATER</h3>
+    </div>
+    <!-- show output -->
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8" id = "output">output</div>
+    </div>
+    <!-- five rows of buttons -->
+    <div class="row buttons">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button class="btn btn-danger" id="AC" onclick = "ACPressed()">AC</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn btn-danger" id="CE" onclick = "CEPressed()">CE</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn">%</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn btn-warning" onclick = "opePressed($(this).text())">÷</button>
+      </div>
+    </div>
+      <div class="row buttons">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">7</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">8</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">9</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn btn-warning" onclick = "opePressed($(this).text())" >x</button>
+      </div>
+    </div>
+      <div class="row buttons">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button class="btn " onclick = "numPressed($(this).text())">4</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">5</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">6</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn btn-warning" onclick = "opePressed($(this).text())" >-</button>
+      </div>
+    </div>
+      <div class="row buttons">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">1</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">2</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick = "numPressed($(this).text())">3</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn btn-warning plus" onclick = "opePressed($(this).text())" >+</button>
+      </div>
+    </div>
+      <div class="row buttons">
+      <div class="col-sm-offset-2 col-sm-4">
+        <button class="btn wide" onclick = "numPressed($(this).text())">0</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn" onclick="numPressed($(this).text())">.</button>
+      </div>
+       <div class="col-sm-2">
+        <button class="btn btn-warning" onclick = "equalPressed()" >=</button>
+      </div>
+       
+    </div>
+  </div>
+
+</div>
+<script src="actualcal.js"> </script>
+</body>
+</html>
